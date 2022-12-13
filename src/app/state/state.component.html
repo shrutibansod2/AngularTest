@@ -1,0 +1,7 @@
+<p>state works!</p>
+<select                
+          type="text"
+          class="form-control" >
+          <option [value]="null" disabled>Select Country</option>
+          <option *ngFor="let item of StateList" [value]="item.PKStateId">{{item.StateDesc}}</option>
+        </select> 
